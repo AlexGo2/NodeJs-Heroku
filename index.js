@@ -3,7 +3,7 @@ const res = require('express/lib/response');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.get(port, (req, res)=>{ 
+app.get('/', (req, res)=>{ 
     res.send('Heroku, Online!');
 });
 
